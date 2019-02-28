@@ -1187,12 +1187,12 @@ func (w responseWriter) replyHeader() string {
 	return fmt.Sprintf(replyHeader, w.toUserName, w.fromUserName, time.Now().Unix())
 }
 
-// Return weixin instance.
+// GetWeixin returns weixin instance.
 func (w responseWriter) GetWeixin() *Weixin {
 	return w.wx
 }
 
-// Return user data.
+// GetUserData returns user data.
 func (w responseWriter) GetUserData() interface{} {
 	return w.wx.userData
 }
